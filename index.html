@@ -2,26 +2,38 @@
 <html lang="en">
 <head>
 	<title>Embeded Images and Videos</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,300italic,100italic,100,300,900,900italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet"  href="css/style.css">
 </head>
 <body>
-<header>
-	<div class="logo">
-		<img src="#">
-		<button></button>
+
+<header class="group">
+	<div class="brand">
+		<div class="logo"></div>
+		<button class="nav-btn">
+			<i class="fa fa-bars"></i>
+				
+			</span>
+		</button>
 	</div>
 
-	<form>
-	<input type="text" name="search" placeholder="Search YouTube...">
-		
-	</form>
+	<div class="search">
+		<form>
+			<input type="text" name="search" placeholder="Search YouTube...">
+		</form>
+	</div>
 
 	<nav>
-		<a href="#">Upload</a>
-		<span></span>
-		<img src="#">
+		<button>Upload</button>
+		<i class="fa fa-bell-o"></i>
+		<img src="images/photo.jpg" alt="User profile photo">
 	</nav>
 </header>
+</div>
 
+<div class="wrapper group">
 <div id="main-content">
 	<div class="video">
 		this is where the video will go
@@ -30,43 +42,46 @@
 	<div class="about-video-header">
 		<h2>Contributing to Open Source Part 1: The Easy Way</h2>
 
-		<div class="user-info">
-			<img src="#">
-			<a href="#">The Odin Project</a>
-			<button>Subscribe</button>
-			<span>123</span>
+		<div class="user-info group">
+			<img src="images/channel_image.jpg">
+			<div class="user-info-inner">
+				<a href="#">The Odin Project</a>
+
+				<div class="subscribe">
+					<button><i class="fa fa-youtube-play"></i>Subscribe</button>
+					<span>123</span>
+				</div>
+			</div>
+
+			<div class="views">
+				<p>5950</p>
+			</div>
 		</div>
 
-		<div class="views">
-			<p>5950</p>
-		</div>
-
-		<div class="action-bar">
+		<div class="action-bar group">
 			<div class="actions">
-				<button></button>
-				<span>Add to</span>
-
-				<button></button>
-				<span>Share</span>
-
-				<button></button>
-				<span>More</span>
+				<span><i class="fa fa-plus"></i>Add to</span>
+				<span><i class="fa fa-share-alt"></i>Share</span>
+				<span><i class="fa fa-ellipsis-h"></i>More</span>
 			</div>
 
 			<div class="votes">
 
-				<div class="upvote">
-					<button></button>
-					<span></span>
-				</div>
-
 				<div class="downvote">
-					<button></button>
+					<a href="#"><i class="fa fa-thumbs-down icon-flipped"></i></a>
 					<span>0</span>
 				</div>
+
+			
+				<div class="upvote">
+					<a href="#"><i class="fa fa-thumbs-up"></i></a>
+					<span>37</span>
+				</div>
+
 			</div>
 		</div>
 	</div>
+
 
 	<div class="about-video">
 		<div class="about-video-content">
@@ -80,255 +95,260 @@
 	</div>
 
 	<div class="comments">
-		<h3>All Comments(2)</h3>
-
-		<form>
-			<div>
-				<img src="#">
-				<input type="text" name="comment" placeholder="Share your thoughts">
+		<h3>All Comments (2)</h3>
+			<div class="post-comment group">
+				<img src="images/photo.jpg" at=" userprofile picture">
+				<form>
+					<input type="text" name="comment" placeholder="Share your thoughts">
+				</form>
 			</div>
-		</form>
 
-		<button>Top Comments</button>
+		<button>Top Comments<i class="fa fa-sort-desc"></i></button>
 
 		<div class="display-comments">
-			<div class="user-comment">
+
+			<div class="user-comment group">
+
 				<div class="user-avatar">
-					<img src="#">
+					<img src="images/user1.jpg">
 				</div>
 
-				<div class="comment-content">
+				
 
+				<div class="comment-content group">
 					<div class="comment-details">
-						<a href="#">Richared Dickinson</a>
-						<p>8 months ago</p>
+						<a href="">Richared Dickinson</a>
+						<span>8 months ago</span>
 					</div>
 
 					<p>I am working through the Odin Project which is good but it took me ages to figure out how to submit my solution to the HTML/CSS project.I posted in all places (on the Odin website, on Google+ and others) and I finally got a reply (thanks hgducherne). However I'm still waiting for the repo admin to accept my pull request, so this has been a slow, tedious process as my first introduction to contributing on GitHub. Shame I didn't see this video earlier and I hope my pull request is dealt with soon.....</p>
-
+					
 					<div class="comment-actions">
-						<a href="#">Reply</a>
-						<button></button>
-						<button></button>
+						<a href="#" class="reply">Reply</a>
+
+						<a href="#"><i class="fa fa-thumbs-up"></i></a>
+						<a href="#"><i class="fa fa-thumbs-down"></i></a>
 					</div>
 				</div>
 
+					
 			</div>
 
-			<div class="user-comment">
+
+			<div class="user-comment group">
+
 				<div class="user-avatar">
-					<img src="#">
+					<img src="images/user2.png">
 				</div>
 
 				<div class="comment-content">
 
 					<div class="comment-details">
 						<a href="#">andrewscheuermann05 </a>
-						<p>10 months ago</p>
+						<span>10 months ago</span>
 					</div>
 
 					<p>FYI: the edit button has changed to a diagonal pencil</p>
 
 					<div class="comment-actions">
-						<a href="#">Reply</a>
-						<button></button>
-						<button></button>
+						<a href="#" class="reply">Reply</a>
+						<a href="#"><i class="fa fa-thumbs-up"></i></a>
+						<a href="#"><i class="fa fa-thumbs-down icon-flipped"></i></a>
 					</div>
 				</div>
 
 				
 			</div>
 		</div>
-
-		
 	</div>
 </div>
 	
 
-<aside>
-<div class="aside-actions">
-	<p>Up Next</p>
+	<aside class="group">
+	<div class="aside-actions">
+		<p>Up Next</p>
 
-	<div class="autoplay-actions">
-		<p>Autoplay</p>
-		<span></span>
-		<div class"autoplay-toggle">
+		<div class="autoplay-actions">
+			<p>Autoplay</p>
+			<span></span>
+			<div class"autoplay-toggle">
 			
+			</div>
 		</div>
-	</div>
 
-	<div class="next-video">
+		<div class="next-video">
+			<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
+		</div>
+
+		<div class="video-preview">
 		<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+		<div class="video-preview">
+		<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+		<div class="video-preview">
+		<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+		<div class="video-preview">
+		<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+		<div class="video-preview">
+		<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+		<div class="video-preview">
+		<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+		<div class="video-preview">
+		<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+		<div class="video-preview">
+		<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+		<div class="video-preview">
+		<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+		<div class="video-preview">
+		<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+		<div class="video-preview">
+		<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+		<div class="video-preview">
+		<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+		<div class="video-preview">
+		<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+		<div class="video-preview">
+		<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+		<div class="video-preview">
+		<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+		<div class="video-preview">
+		<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+		<div class="video-preview">
+		<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
+		<div class="video-preview">
+		<img src="#">
+			<div class="video-details">
+				<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
+				<p>By imitiana</p>
+				<p>11,053 views</p>
+			</div>
 		</div>
 	</div>
-
-	<div class="video-preview">
-	<img src="#">
-		<div class="video-details">
-			<h4>'How to Get a Job at the Big 4 - A Students Guide' By Sean Lee </h4>
-			<p>By imitiana</p>
-			<p>11,053 views</p>
-		</div>
-	</div>
+	</aside>
 </div>
-</aside>
 
 
 <footer>
